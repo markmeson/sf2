@@ -1,0 +1,26 @@
+{% extends '::layout.html.twig' %}
+
+{% block head %}
+<link href="{{ asset('css/home.css') }}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block title %}
+	What Digs - Social Network
+{% endblock %}
+
+{% block body %}
+
+	<div id="logo"></div>
+	<div id="banner"></div>
+	<div id="sidepanel">
+		{% include 'AcmeStudyBundle:Menu:menu.html.twig' %}
+	</div>
+	
+	<div id="mainblock">
+		<br /><br />
+		{% block mainblock %}
+
+		This shows up if the content block is not used.
+		{% endblock %}
+	</div>
+{% endblock %}

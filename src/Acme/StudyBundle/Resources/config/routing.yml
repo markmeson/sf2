@@ -1,0 +1,13 @@
+#homepage:
+#    pattern:  /
+#    defaults: { _controller: AcmeStudyBundle:Default:index }
+
+hello:
+    pattern:  /hello/{name}
+    defaults: { _controller: AcmeStudyBundle:Hello:index }
+
+about:
+    pattern: /about
+    defaults: { _controller: AcmeStudyBundle:About:index }
+
+
